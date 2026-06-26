@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Shawn Wimer Portfolio
 
 React portfolio app generated from `site.md`.
@@ -29,6 +28,3 @@ This repo includes `.github/workflows/deploy-pages.yml`. Push `main` to GitHub, 
 - Pages source: `GitHub Actions`
 
 For the `shawnwwimer.github.io` user site, keep the Vite base path as `/`.
-=======
-# shawnwwimer.github.io
->>>>>>> b57706e224031cf25cd9961783ac5427bd2db87a
