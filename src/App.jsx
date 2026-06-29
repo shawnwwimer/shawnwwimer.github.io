@@ -222,7 +222,7 @@ const galleryFigures = [
   {
     image: sliceExample,
     alt: "X-ray scan results of PCB",
-    title: "Effective debugging",
+    title: "Comprehensive fault analysis of a flex PCB",
     text: "The first iteration of our minimally invasive device had significant yield issues. After assembling X-ray slices a local geography lab took into a volumetric scan, I found that the flex PCB manufacturer did not keep to the tolerances they claimed. Many of the solder joints had failed and many of the traces had inconsistent widths. Most shockingly, their laser cutting tool trimmed too much off of the board edge, allowing the signal and ground planes to form intermittent bridges while flexing.",
   },
   {
@@ -274,7 +274,7 @@ function App() {
         <section className="hero">
           <div className="hero-title">
             <p className="eyebrow">Shawn Wimer</p>
-            <h1>Solutions from concept to end product: hardware, software, implementation, and analysis.</h1>
+            <h1>Solutions from concept to end product.</h1>
           </div>
           <div className="hero-copy">
             <p className="lead">
@@ -344,7 +344,7 @@ function App() {
           {capabilities.map((capability) => (
             <article className="capability-card" key={capability.title}>
               <h3>{capability.title}</h3>
-              <p>{capability.intro}</p>
+              {/* <p>{capability.intro}</p> */}
               <ul>
                 {capability.items.map((item) => (
                   <li key={item}>{item}</li>
