@@ -21,11 +21,11 @@ const links = [
 const proofItems = [
   {
     title: "End-to-end ownership",
-    text: "Architecture, firmware, bring-up, debugging, data collection, and analysis.",
+    text: "Architecture and design through data collection and analysis.",
   },
   {
-    title: "Embedded + FPGA",
-    text: "Miniaturized sensor platforms, low-SWaP systems, real-time OS and baremetal, Zynq platforms, and vision HLS.",
+    title: "Resource constrained systems",
+    text: "Real-time OS and baremetal on microproccessor and FPGA platforms.",
   },
   {
     title: "Physics-grounded design",
@@ -84,12 +84,12 @@ const projects = [
     reverse: true,
     details: [
       {
-        label: "What I owned",
-        text: "HLS kernels, multi-frame data processing, memory optimization, platform bring-up, and host/processor interaction.",
-      },
-      {
         label: "Engineering challenge",
         text: "Performing multi-frame data processing for generating overlays, building a responsive user interface, and enforcing reliable frame rates, all under heavy time constraints.",
+      },
+      {
+        label: "What I owned",
+        text: "HLS kernels, multi-frame data processing, memory optimization, platform bring-up, and host/processor interaction.",
       },
       {
         label: "Outcomes",
@@ -106,7 +106,7 @@ const projects = [
   },
   {
     kicker: "Embedded spectral imaging",
-    title: "From infrared sensor data to useful features",
+    title: "Multispectral imaging and analysis",
     intro:
       "Embedded multispectral and hyperspectral imaging work spanning acquisition, FPGA/SoC data movement, calibration, material differentiation, and higher-level interpretation.",
     image: trentoExample,
@@ -117,12 +117,12 @@ const projects = [
       "Multispectral images reveal features otherwise hidden in too-coarse bins. This is an example of my low-compute material differentiation approach for infrared spectrum hyperspectral images, using no training, classification, or segmentation. The differentiation is less obvious in this visible image, but there are no free-to-use thermal infrared multi/hyperspectral scene sets.",
     details: [
       {
-        label: "What I owned",
-        text: "Compute system architecture, embedded/FPGA integration, capture workflows, processing concepts, and compute-limited analysis techniques.",
-      },
-      {
         label: "Engineering challenge",
         text: "Preserving meaningful spectral information within hardware, bandwidth, calibration, and compute limits.",
+      },
+      {
+        label: "What I owned",
+        text: "Compute system architecture, embedded/FPGA integration, capture workflows, processing concepts, and compute-limited analysis techniques.",
       },
       {
         label: "Outcomes",
@@ -150,12 +150,12 @@ const projects = [
     reverse: true,
     details: [
       {
-        label: "What I owned",
-        text: "Model construction, parameter sweeps, physical interpretation, analytical derivations, and design trade studies.",
-      },
-      {
         label: "Engineering challenge",
         text: "Bridging full-wave simulations and complete-system behavior without losing the physics that drives performance or assuming unrealistic engineering.",
+      },
+      {
+        label: "What I owned",
+        text: "Model construction, parameter sweeps, physical interpretation, analytical derivations, and design trade studies.",
       },
       {
         label: "Outcomes",
@@ -175,7 +175,7 @@ const projects = [
 const capabilities = [
   {
     title: "Embedded systems",
-    intro: "Low-power connected sensing platforms and custom peripheral integration.",
+    // intro: "Low-power connected sensing platforms and custom peripheral integration.",
     items: [
       "System-level block design and schematic reviews",
       "RTOS or baremetal with embedded GUI",
@@ -185,7 +185,7 @@ const capabilities = [
   },
   {
     title: "FPGA + edge imaging",
-    intro: "Real-time processing pipelines and heterogeneous compute systems.",
+    // intro: "Real-time processing pipelines and heterogeneous compute systems.",
     items: [
       "AMD/Xilinx Zynq and Kintex",
       "Vitis HLS",
@@ -195,7 +195,7 @@ const capabilities = [
   },
   {
     title: "Optics + instrumentation",
-    intro: "Physics-driven optical design, characterization, and calibration.",
+    // intro: "Physics-driven optical design, characterization, and calibration.",
     items: [
       "Metaatom concept and simulation",
       "Diffractive optic design",
@@ -207,7 +207,7 @@ const capabilities = [
   },
   {
     title: "Scientific computation",
-    intro: "Models and analysis tools built to answer experimental questions.",
+    // intro: "Models and analysis tools built to answer experimental questions.",
     items: [
       "Development of simulation software for diverse fields",
       "Signal and image processing",
@@ -222,7 +222,7 @@ const galleryFigures = [
   {
     image: sliceExample,
     alt: "X-ray scan results of PCB",
-    title: "Low-level debugging",
+    title: "Effective debugging",
     text: "The first iteration of our minimally invasive device had significant yield issues. After assembling X-ray slices a local geography lab took into a volumetric scan, I found that the flex PCB manufacturer did not keep to the tolerances they claimed. Many of the solder joints had failed and many of the traces had inconsistent widths. Most shockingly, their laser cutting tool trimmed too much off of the board edge, allowing the signal and ground planes to form intermittent bridges while flexing.",
   },
   {
@@ -274,16 +274,16 @@ function App() {
         <section className="hero">
           <div className="hero-title">
             <p className="eyebrow">Shawn Wimer</p>
-            <h1>I turn difficult physical problems into working systems.</h1>
+            <h1>Solutions from concept to end product: hardware, software, implementation, and analysis.</h1>
           </div>
           <div className="hero-copy">
             <p className="lead">
               <strong>
-                Embedded systems | Data processing | Scientific instrumentation
-                | Research
+                Embedded Systems & Hardware | Data Processing & Analysis | Instrumentation
+                | Simulation & Visualization
               </strong>
             </p>
-            <p>
+            {/* <p>
               I work across embedded firmware, sensing, real-time imaging and
               processing, research, and scientific software.
             </p>
@@ -291,7 +291,7 @@ function App() {
               My best work happens where the full signal chain matters: sensor
               timing, hardware bring-up, data movement, calibration, analysis,
               and validation.
-            </p>
+            </p> */}
             <div className="hero-links">
               {links.map(({ label, href, Icon }) => (
                 <a key={label} href={href}>
@@ -313,14 +313,14 @@ function App() {
         </section>
 
         <section className="section-head" id="work">
-          <div>
+          {/* <div> */}
             <p className="section-kicker">Selected work</p>
-            <h2>Systems, not isolated components.</h2>
-          </div>
-          <p>
+            <h2>Elegant project design through the full signal chain.</h2>
+          {/* </div> */}
+          {/* <p>
             Public, architecture-level summaries that show what Shawn owned and
             how he thinks without exposing proprietary implementation details.
-          </p>
+          </p> */}
         </section>
 
         {projects.map((project) => (
@@ -330,12 +330,12 @@ function App() {
         <section className="section-head" id="range">
           <div>
             <p className="section-kicker">Technical range</p>
-            <h2>Depth where the interfaces get difficult.</h2>
+            <h2>Cross-layer technical fluency.</h2>
           </div>
           <p>
             I am most useful when a project crosses boundaries: electrical
             hardware and firmware, research and implementation, optics and
-            computation, or experimental data and the model needed to interpret
+            computation, or experimental data and the models needed to interpret
             it.
           </p>
         </section>
@@ -377,7 +377,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <span>Shawn Wimer | Electrical engineer and research systems builder</span>
+        <span>Shawn Wimer | Electrical engineer and systems builder</span>
         <div className="footer-links">
           {links.map(({ label, href }) => (
             <a key={label} href={href}>
